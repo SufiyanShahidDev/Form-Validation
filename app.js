@@ -23,12 +23,14 @@ function submitData() {
     if (username === "") {
         document.getElementById("error-user").innerHTML = "This is Field required"
         document.getElementById("username").style.border = "1px solid red"
+        document.getElementsByTagName("span").style.color = "red"
         isvalid = false
     }
 
     if (email === "") {
         document.getElementById("error-email").innerHTML = "This is required"
         document.getElementById("email").style.border = "1px solid red"
+        document.getElementsByTagName("span").style.color = "red"
         isvalid = false
     }
 
@@ -36,12 +38,14 @@ function submitData() {
     if (phone === "") {
         document.getElementById("error-phone").innerHTML = "This is required"
         document.getElementById("phone").style.border = "1px solid red"
+        document.getElementsByTagName("span").style.color = "red"
         isvalid = false
     }
 
     if (message === "") {
         document.getElementById("error-message").innerHTML = "This is required"
         document.getElementById("message").style.border = "1px solid red"
+        document.getElementsByTagName("span").style.color = "red"
         isvalid = false
     }
 
