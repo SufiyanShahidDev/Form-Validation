@@ -17,6 +17,15 @@ function submitData() {
     document.getElementById("error-phone").innerHTML = ""
     document.getElementById("error-message").innerHTML = ""
 
+    function submitAlert() {
+        Swal.fire({
+            title: "Form has been Submitted Successfully!",
+            icon: "success",
+            draggable: true
+        });
+    }
+
+
     let isvalid = true
 
 
@@ -51,21 +60,17 @@ function submitData() {
 
     if (isvalid) {
 
-        Swal.fire({
-            title: "Form has been Submitted Successfully!",
-            icon: "success",
-            draggable: true
-        });
+        submitAlert();
 
         console.log(username);
         console.log(email);
         console.log(phone);
         console.log(message);
 
-        document.getElementById("username").value = ""
-        document.getElementById("email").value = ""
-        document.getElementById("phone").value = ""
-        document.getElementById("message").value = ""
+        document.getElementById("username").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("phone").value = "";
+        document.getElementById("message").value = "";
 
     }
 
