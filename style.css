@@ -80,9 +80,9 @@ body {
   transform: translateY(-2px);
 }
 
-span{
+/* span{
   color: red;
-}
+} */
 
 .error{
   color: red;
